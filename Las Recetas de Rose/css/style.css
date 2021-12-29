@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    background-image: url(../img/lemon-pie\ 1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 343px;
+    padding: 20px;
+    color: white;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: thistle;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fas , .far {
+    font-size: 20px;
+    color: #DAF7A6;
+}
+
+.Ingredientes , .Instrucciones{
+    padding: 20px;
+    font-size: 18px;
+}

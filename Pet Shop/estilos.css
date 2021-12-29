@@ -1,0 +1,34 @@
+.barraSup{
+    background-color: black;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+header{
+    background-color: #F0A83E;
+
+}
+
+.bannerPlato{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #3C2313;
+}
+
+.texto1{
+    background-color: white;
+}
+
+.texto3{
+    background-color: #F0A83E;
+    color: white;
+}
+
+.productosDestacados{
+    text-align: center;
+}
