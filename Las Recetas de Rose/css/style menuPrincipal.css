@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    background-image: url(../img/sopa\ verde.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 343px;
+    padding: 20px;
+    color: white;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #CD5C5C;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fas , .far {
+    font-size: 30px;
+    color: #5F9EA0;
+}
+
+.recetasDulces , .recetasSintacc {
+    padding: 20px;
+    font-size: 18px;
+}
+
+a{
+    color: black;
+}

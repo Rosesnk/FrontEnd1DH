@@ -1,0 +1,24 @@
+header {background-color: #E5E5E5;
+}
+
+h1 {background-color: #C4C4C4;
+    font-weight: bold;
+    letter-spacing: 0.5cm;
+    color: #005677;
+    text-align: center;}
+
+h2 {background-color: #C4C4C4;
+    font-weight: bold;
+    color: #005677;}
+
+.textoResaltado{font-weight: bold;
+                font-style: oblique;
+}
+
+p { color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    background-color: #005677;
+    }
+
+    
