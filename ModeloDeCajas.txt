@@ -1,0 +1,43 @@
+Cada caja se compone de:
+*Margin (margenes)
+*Border (bordes)
+*Padding (relleno)
+*Content (contenido)
+
+Se puede aplicar propiedades de manera diferente a los cuatro lados de la caja con: top , right , bottom y left.
+
+
+Propiedad width: si no se declara, el ancho sera igual al contenedor padre. Puede declararse en % o px.
+
+Propiedad height: si no se declara, el alto sera segun el contenido (ya sea de bloque o de linea)
+Unidad recomendada px 
+
+ej width y height: 
+css div{
+        width: 130px;
+        height: 120px;}
+
+
+Propiedad padding: relleno entre contenido y el borde.Unidades px. Un solo valor indica a los 4 lados, dos valores indica altos y anchos. Tres valores indican top, anchos y bottom. Cuatro valores indican top, right, bottom y left. 
+ej:  css div{ padding: 15px }
+     css div{ padding-top: 15px;
+              padding-right: 15px;
+              padding-bottom: 15px;
+              padding-left: 15px;  }
+
+
+
+Propiedad border: se ubica entre el contenio y el margen. Se puede definir el estilo de la linea, espesor y color. 
+*Estilo de linea: solid, dotted, dashed o double. 
+*Espesor de linea: cualquier unidad de medidad
+*Color: cualquier color
+ej: css div{ border: solid 3px yellow }
+
+
+Propiedad margin: margen exterior del elemento. Separa una caja de la otra. Se asigna los valores igual que padding con 1,2,3 y 4 valores. 
+
+
+Propiedad box-sizing: ayuda a calcular el ancho y alto total. 
+
+
+
