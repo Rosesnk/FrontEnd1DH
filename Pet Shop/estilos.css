@@ -1,7 +1,7 @@
 .barraSup{
     background-color: black;
     color: #F3F3F3;
-    font-family: 'Roboto', sans-serif;
+    
     font-style: normal;
     font-weight: normal;
     
@@ -9,15 +9,29 @@
 
 header{
     background-color: #F0A83E;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.areaPrincipal{
+    background-image: url(./img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size:cover;
+    background-attachment:local;
+    height: 1000px;
+    padding: 20px;
 
 }
 
+main{
+    font-family: 'Roboto', sans-serif;
+
+}
 .bannerPlato{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    text-align: center;
     color: #3C2313;
+    text-align: center;
 }
 
 .texto1{
@@ -29,6 +43,17 @@ header{
     color: white;
 }
 
-.productosDestacados{
-    text-align: center;
+
+.footer1{
+    background-color: #3C2313;
+    color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.footer2{
+    background-color: black;
+    padding: 1px;
+    color: white;
 }
