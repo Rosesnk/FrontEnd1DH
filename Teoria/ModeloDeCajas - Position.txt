@@ -1,0 +1,146 @@
+Cada caja se compone de:
+*Margin (margenes)
+*Border (bordes)
+*Padding (relleno)
+*Content (contenido)
+
+Se puede aplicar propiedades de manera diferente a los cuatro lados de la caja con: top , right , bottom y left.
+
+
+Propiedad width: si no se declara, el ancho sera igual al contenedor padre. Puede declararse en % o px.
+
+Propiedad height: si no se declara, el alto sera segun el contenido (ya sea de bloque o de linea)
+Unidad recomendada px 
+
+ej width y height: 
+css div{
+        width: 130px;
+        height: 120px;}
+
+
+Propiedad padding: relleno entre contenido y el borde.Unidades px. Un solo valor indica a los 4 lados, dos valores indica altos y anchos. Tres valores indican top, anchos y bottom. Cuatro valores indican top, right, bottom y left. 
+ej:  css div{ padding: 15px }
+     css div{ padding-top: 15px;
+              padding-right: 15px;
+              padding-bottom: 15px;
+              padding-left: 15px;  }
+
+
+
+Propiedad border: se ubica entre el contenio y el margen. Se puede definir el estilo de la linea, espesor y color. 
+*Estilo de linea: solid, dotted, dashed o double. 
+*Espesor de linea: cualquier unidad de medidad
+*Color: cualquier color
+ej: css div{ border: solid 3px yellow }
+
+
+Propiedad margin: margen exterior del elemento. Separa una caja de la otra. Se asigna los valores igual que padding con 1,2,3 y 4 valores. 
+
+
+Propiedad box-sizing: ayuda a calcular el ancho y alto total. 
+Puede ser content-box (solo toma en cuenta el contenido) o border-box (toma en cuenta el contenido, bordes y padding)
+
+Ej: css  div{box-sizing: content-box}
+
+    css  div{box-sizing: border-box}  EL MAS USADO
+
+    css  *{box-sizing: border-box}   SELECTOR UNIVERSAL
+
+
+
+Propiedad border-radius: redondea los bordes segun los px que se indique
+
+Ej: css  div{border-radius:5px}
+
+
+TIPOS DE SELECTORES (clase 9. min 26:30)
+
+*Selector descendiente  (espacio) selecciona solo los contenedores nombrados despues del espacio
+*Selector hijo (>) selecciona al contenedor hijo directo nombrado a la derecha del >
+*Selector hermano adyacente (+) selecciona al contenedor siguiente del hijo nombrado a la izquierda si hubiera varios del mismo nombre o del nombre indicado a la derecha
+*Selector hermano general (~) selecciona a los contenedores siguientes del nombrado a la izquierda de nombre del de la derecha 
+*Selector universal (*) selecciona todos los elementos dentro del selector anterior. Y si esta solo el *{} indica que esta seleccionando todo el archivo
+
+
+PSEUDO-SELECTORES
+
+:first-child  (selecciona al primer elemento del contenedor de varios elementos iguales)
+
+:only-child (selecciona el cualquier elemento hijo unico de algun otro elemento)
+
+:last-child (selecciona un elemento que sea el ultimo elemento secundario dentro de otro. Si hay un solo elemento, ese cuenta como primer, unico y ultimo hijo)
+
+:nth-child(NRO) (selecciona el enesimo elemento dentro de otro elemento, poniendo la posicion en los parentesis)
+
+
+:nth-last-child(NRO) (selecciona el enesimo elemento dentro de otro elemento, contando de atras hacia adelante y poniendo la posicion en los parentesis)
+
+:first-of-type (Selecciona el primer elemento de ese tipo dentro de otro elemento.)
+
+:nth-of-type() (Selecciona un elemento específico según su tipo y orden en otro elemento, o instancias pares o impares de ese elemento)
+
+:nth-of-type(An+B) (selecciona cada enésimo elemento(ej, de 2 en 2), comenzando el  recuento en una instancia específica de ese elemento)
+
+:only-of-type (Seleccione elementos que sean los únicos de su tipo dentro de su elemento padre)
+
+:last-of-type (Selecciona cada último elemento de ese tipo dentro de otro elemento. Recuerde que el tipo se refiere al tipo de etiqueta, por lo que p y span son tipos diferentes.)
+
+:empty (Selecciona elementos que no tienen ningún otro elemento dentro de ellos.)
+
+:not(elemento, clase o id) (Puede usar esto para seleccionar todos los elementos que no coincidan con el selector "X") 
+
+
+SELECTORES DE ATRIBUTOS
+
+[atributo] (Seleccionar todos los elementos que tienen un atributo específico, por ej href o type)
+
+A[atributo] (Combine el selector de atributos con otro selector (como el selector de nombre de etiqueta) )
+
+[attribute="value"]  (Seleccione todos los elementos que tengan un valor de atributo específico. Los selectores de atributos distinguen entre mayúsculas y minúsculas, cada carácter debe coincidir exactamente)
+
+[attribute^="value"] (Seleccione todos los elementos con un valor de atributo que comience con caracteres específicos, algunas letras del valor)
+
+[attribute$="value"] (Seleccione todos los elementos con un valor de atributo que termine con caracteres específicos, algunas letras del valor)
+
+[attribute*="value"] (Seleccione todos los elementos con un valor de atributo que contenga caracteres específicos en cualquier lugar,Un selector útil si puede identificar un patrón común en cosas como los atributos class, href o src)
+
+
+
+Position:
+
+*position: static;
+
+*position: absolute; La referencia son los costados del body. El espacio que ocupaba va a quedar vacio y otros elementos pueden ocuparlo.
+left px
+bottom px
+right px
+top px
+
+
+*position: relative; puedo adaptarlo al contenedor. Ocupa el espacio que ocupaba originalmente, no afecta la posicion de los otros contenedores.La referencia son sus propios costados.
+
+*position: fixed;   considera los limites del body pero se mantiene fijo tomando como referencia la ventana del navegador. Se puede utilizar top, right, left , bottom
+ 
+
+ **Posicionamiento sticky : hibrido entre  relativo y fijo manteniendose relativo hasta cruzal lo especificado, pasando a ser fijo.
+ej css div{ position: sticky; top:15px;}
+
+
+**Position relative + position absolute: el punto de referencia de las cajas hijas seguira siendo absoluta dentro de un padre, al menos que el padre tenga referencia relativa. Eso haria que la referncia sea el contenedor padre.
+ ej css div{position: relative}
+        .caja{position absolute:
+            right
+            top }
+
+
+
+
+
+Z-INDEX: sirve para mover cajas a lo largo del eje Z superponiendo las cajas
+Cuando a una caja se le asigna la posicion relative, absolute o fixed
+su z-index: 0;
+Asignando valores mayores como 10, la caja se superpondria a las cajas con valor 0
+
+
+
+
