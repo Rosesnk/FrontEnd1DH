@@ -1,0 +1,10 @@
+Flex-direction :
+Se puede elegir main axis(eje principal) y cross axis(eje transversal)
+
+
+TIPOS DE FLEX 
+
+*flex-direction: row  (eje x de izquierda a derecha)
+
+*flex-direction: row-reverse (eje x de derecha a izquierda)
+

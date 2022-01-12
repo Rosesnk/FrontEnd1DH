@@ -1,11 +1,46 @@
-.barraSup{
-    background-color: black;
-    color: #F3F3F3;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barraSup {
+    display: inline-block;
+    flex-direction: row;
     
-    font-style: normal;
-    font-weight: normal;
     
 }
+.menuBarraSup nav{
+    display: block;
+}
+.menuBarraSup nav ul li {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-end;    
+
+}
+/*.menuBarraSup nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}*/
+.barraSup h4{
+    background-color: black;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    font-style: normal;
+    font-weight: lighter;
+    position: absolute;
+    
+    height: 12px;
+    left: 0px;
+    top: 0px;
+
+}
+
 
 header{
     background-color: #F0A83E;
