@@ -1,0 +1,87 @@
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.contenedor .caja1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: brown;
+    text-align: center;
+    justify-content: center;
+    border: double 10px black;
+    border-radius: 10px;
+}
+
+.contenedor .caja2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    border: solid 10px black;
+    border-radius: 10px;
+}
+
+.contenedor .caja3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    text-align: center;
+    justify-content: center;
+    border: dotted 10px black;
+    border-radius: 10px;
+}
+
+.contenedor .caja4{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    border: none 10px black;
+    border-radius: 10px;
+}
+
+.contenedor .caja5{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: violet;
+    text-align: center;
+    justify-content: center;
+    border: solid 10px black;
+    border-radius: 10px;
+}
+
+.contenedor .caja6{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    justify-content: center;
+    border:dashed 10px black;
+    border-radius: 10px;
+
+}
+

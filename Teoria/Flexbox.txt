@@ -8,3 +8,42 @@ TIPOS DE FLEX
 
 *flex-direction: row-reverse (eje x de derecha a izquierda)
 
+*flex-direction: column (eje y de arriba a abajo)
+
+*flex-direction: column-reverse (eje y de abajo hacia arriba)
+
+
+ALINEACION
+
+*Por el main axis se usa justify-content
+*Por el cross axis se usa align-items
+
+justify-content: flex-start
+justify-content: flex-end
+justify-content: center
+justify-content: space-between (el espacio se repaprte en los medios, quedando las cajas de los costados pegados al inicio y final)
+justify-content: space-around (el espacio se reparte en los costados por igual) 
+space-evenly (es mas parejo el espaciado)
+
+Se usa cuando tenemos un contenedor de una sola linea, el flex-flow:no-wrap 
+align-items: stretch (por defecto, los items ocuparan todo el espacio disponible en el cross axis)
+align-items: flex-start (se alinean al inicio del cross axis)
+align-items: flex-end (se alinean al final del eje transversal)
+align-items: center (se alinean al centro del eje transversal)
+
+ALIGN CONTENT se usa cuando estamos trabajando con untenedores multilinea, allineamos los items a lo largo del cross axis (flex-flow:wrap  o wrap-reverse)
+mismos valores align-items y justify-content
+
+
+ESTRUCTURA BASICA 
+
+En contenedores padre:
+
+display: flex 
+display: inline-flex
+
+
+flex-wrap: wrap (respeta el ancho de los items hijos)
+flex-wrap: nowrap
+flex-wrap: wrap-reverse 
+
