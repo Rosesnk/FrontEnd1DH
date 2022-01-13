@@ -47,3 +47,17 @@ flex-wrap: wrap (respeta el ancho de los items hijos)
 flex-wrap: nowrap
 flex-wrap: wrap-reverse 
 
+
+ITEMS 
+
+order: 0 (viene asi por defecto, esta propiedad controla el orden de cada item y puede tener numeros positivos o negativos enteros. Entonces los de diferente orden positivo pasan al final de la lista, los de orden negativo pasan al principio de la lista)
+
+
+flex-grow: 1 (define cuanto puede crecer el item que posee esta propiedad, segun el valor asignado siendo 1 el 100% y 0 el 0%)
+
+
+
+
+
+
+
