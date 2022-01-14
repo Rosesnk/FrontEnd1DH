@@ -1,0 +1,79 @@
+.main{
+    
+    
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: raw;
+     
+   
+}
+
+.contenedor .caja1{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    text-align: center;
+    border: double 10px black;
+    border-radius: 10px;
+    
+    
+    }
+
+.contenedor .caja2{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    border: solid 10px black;
+    border-radius: 10px;
+
+   
+
+}
+
+.contenedor .caja3{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    text-align: center;
+    border: dotted 10px black;
+    border-radius: 10px;
+
+   
+}
+
+.contenedor .caja4{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    border: none 10px black;
+    border-radius: 10px;
+
+    
+}
+
+.contenedor .caja5{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    text-align: center;
+    border: solid 10px black;
+    border-radius: 10px;
+
+    
+}
+
+.contenedor .caja6{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    border:dashed 10px black;
+    border-radius: 10px;
+
+    order: -1;
+}
+

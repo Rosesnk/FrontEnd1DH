@@ -31,7 +31,7 @@ align-items: flex-start (se alinean al inicio del cross axis)
 align-items: flex-end (se alinean al final del eje transversal)
 align-items: center (se alinean al centro del eje transversal)
 
-ALIGN CONTENT se usa cuando estamos trabajando con untenedores multilinea, allineamos los items a lo largo del cross axis (flex-flow:wrap  o wrap-reverse)
+ALIGN CONTENT se usa cuando estamos trabajando con contenedores multilinea, allineamos los items a lo largo del cross axis (flex-flow:wrap  o wrap-reverse)
 mismos valores align-items y justify-content
 
 
@@ -41,11 +41,13 @@ En contenedores padre:
 
 display: flex 
 display: inline-flex
+display: inline-block (pasa elementos de bloque a linea, respetando sus propiedades de bordes y margenes)
+display: inline (pasa elementos de bloque a linea sin tener en cuenta sus propiedades)
 
 
 flex-wrap: wrap (respeta el ancho de los items hijos)
-flex-wrap: nowrap
-flex-wrap: wrap-reverse 
+flex-wrap: nowrap (alinea todo en la misma linea apretando a los hijos en la misma caja)
+flex-wrap: wrap-reverse  (como wrap pero invirtiendo el orden de las lineas)
 
 
 ITEMS 
@@ -56,7 +58,16 @@ order: 0 (viene asi por defecto, esta propiedad controla el orden de cada item y
 flex-grow: 1 (define cuanto puede crecer el item que posee esta propiedad, segun el valor asignado siendo 1 el 100% y 0 el 0%)
 
 
+flex-basis: 100px (Modifica sobre el eje principal, la medida correspondiente width o height permitiendo ocupar hasta lo pactado x o y si hubiera espacio) Ej: Si flex es column y tengo height predefinido, lo modifica si se puede a esos px 
 
+
+flex-shrink: 0,5; 
+
+align-self (nos permite alinear sobre el eje y independientemente de la alineacion definida en elcotenedor padre align-items: flex-start )
+align-self: flex-start
+align-self: flex-end
+align-self: center
+algn-self: stretch (se ajusta abarcando todo el crossfit , eje y)
 
 
 
