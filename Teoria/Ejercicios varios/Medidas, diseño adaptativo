@@ -1,0 +1,28 @@
+Medidas relativas: si el contenedor cambia, las medidas se adaptan a el.
+
+Porcentajes:
+*relativos
+
+*no se recomienda usar porcentajes para el alto de un elemento
+
+*calculo de porcentaje: elemento hijo(px) * 100 \ elemento padre(px) = porcentaje
+
+em y rem:
+em: relativos al elemento padre
+*si utilizamos em en una propiedad que no sea font-size , se tomara para el calculo el vaos del font-size. 
+*em se utiliza para todo lo que sea tipografia y tambien para margin y padding que varien en funcion de las fuentes.
+*calculo del em.. para font-size: 20px  paddin: 1.5em  (significa 20px * 1.5= 30px)
+*el valor siempre es relativo al padre, y se va heredando de etiqueta en etiqueta cambiando los siguientes tamaños
+
+rem (EL MAS RECOMENDADO): siempre es relativo al tamaño base de font size del elemento padre, sin los cambios modificar a los siguientes cambios de manera escalonada
+
+
+
+viewport-width (vw) y  viewport-height(vh):
+
+width:10vw
+height:10vw 
+SIGNIFICA QUE ES EL 10% DEL widht del VIEWPORT ORIGINAL, O EL CONTENEDOR PADRE DE ESTE.
+
+vw es relativo al ancho total del viewport
+vh es relativo al alto total del viewport 
