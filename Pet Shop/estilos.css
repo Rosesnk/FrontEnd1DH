@@ -23,7 +23,7 @@
     line-height: 12px;
     font-style: normal;
     font-weight: lighter;
-    
+    margin-left: 100px;
 }
 
 .menuSup{
@@ -34,7 +34,11 @@
     font-weight: lighter;
     display: flex;
     justify-content: space-between;
+    
+}
 
+.menuArriba{
+    margin-right: 100px;
 }
 
 .menuBarraSup{
@@ -218,7 +222,7 @@
     line-height: 18px;
     color: white;
     text-decoration: none;
-
+    margin-right: 102px;
 }
 
 .linksote a{
@@ -355,4 +359,16 @@
     align-items: center;
     margin-left: 465px;
     margin-bottom: 30px;
+}
+
+.footer2{
+    color: white;
+    background-color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 12px;
+    width: 1024px;
+    text-align: center;
 }
