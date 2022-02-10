@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 header, footer{
     background-color: #222;
     font-family: 'Roboto';
@@ -12,7 +14,7 @@ header, footer{
     font-size: 16px;
     line-height: 19px;
     color: #f2f2f2 ;
-    width: 1024px;
+    width: 100%;
 
 }
 
@@ -86,8 +88,8 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 420px;
-    width: 1024px;
+    
+    width: 100%;
     padding-top: 30px;
     }
 
@@ -96,7 +98,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     height: 100px;
-    width: 1024px;
+    width: 100%;
 }
 
 .logoHeader{
@@ -168,4 +170,55 @@ footer{
     align-items: center;
     width: 250px;
 
+}
+
+@media (max-width:768px){
+    header{
+        width: 768px;
+    }
+
+
+    main { display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            width: 768px;
+
+
+    }
+    footer{
+        width: 768px;
+    }
+}
+
+@media (max-width:680px){
+
+    header{
+        width: 100%;
+    }
+
+    main{
+        width:100%;
+
+    }
+
+    footer{
+        width:100%;
+    }
+}
+
+@media (max-width:460px){
+
+    header{
+        width: 460px;
+    }
+
+    main{
+        width:460px;
+
+    }
+
+    footer{
+        width:460px;
+    }
 }

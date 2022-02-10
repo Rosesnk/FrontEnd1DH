@@ -1,2 +1,5 @@
-VIEWPORT
+VIEWPORT: etiqueta en header para adaptar al dispositivo la pagina
 
+<meta name="viewport" content="width-device-width, initial-scale-1">
+
+MEDIDAS RELATIVAS
